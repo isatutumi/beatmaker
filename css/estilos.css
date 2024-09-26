@@ -1,0 +1,166 @@
+:root {
+  --cinza: #aaa;
+  --branca: #fff;
+  --cor-fundo: #000000;
+  --cor-fundo-teclas: #303236;
+  --cor-pom: #ff054a;
+  --cor-pom-sombra: #66001d;
+  --cor-clap: #ff7317;
+  --cor-clap-sombra: #9e3f00;
+  --cor-tim: #f5b916;
+  --cor-tim-sombra: #946c00;
+  --cor-puff: #0dc74b;
+  --cor-puff-sombra: #007427;
+  --cor-splash: #60F53C;
+  --cor-splash-sombra: #198000;
+  --cor-toim: #1acbf7;
+  --cor-toim-sombra: #00657e;
+  --cor-psh: #00618A;
+  --cor-psh-sombra: #00374e;
+  --cor-tic: #8056f5;
+  --cor-tic-sombra: #5e29f0;
+  --cor-tom: #BF35F5;
+  --cor-tom-sombra: #8a18b8;
+}
+
+body {
+  align-items: center;
+  background: var(--cor-fundo);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  box-shadow: 6px 8px 0 6px #b3b2b2, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--cor-fundo-teclas);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla_pom.ativa,
+.tecla_pom:active {
+  background-color: var(--cor-pom);
+  border: 4px solid  var(--cor-pom);
+  box-shadow: 3px 3px 0 var(--cor-pom-sombra) inset;
+  outline: none;
+}
+.tecla_clap.ativa,
+.tecla_clap:active {
+  background-color: var(--cor-clap);
+  border: 4px solid  var(--cor-clap);
+  box-shadow: 3px 3px 0 var(--cor-clap-sombra) inset;
+  outline: none;
+}
+.tecla_tim.ativa,
+.tecla_tim:active {
+  background-color: var(--cor-tim);
+  border: 4px solid  var(--cor-tim);
+  box-shadow: 3px 3px 0 var(--cor-tim-sombra) inset;
+  outline: none;
+}
+.tecla_puff.ativa,
+.tecla_puff:active {
+  background-color: var(--cor-puff);
+  border: 4px solid  var(--cor-puff);
+  box-shadow: 3px 3px 0 var(--cor-puff-sombra) inset;
+  outline: none;
+}
+.tecla_splash.ativa,
+.tecla_splash:active {
+  background-color: var(--cor-splash);
+  border: 4px solid  var(--cor-splash);
+  box-shadow: 3px 3px 0 var(--cor-splash-sombra) inset;
+  outline: none;
+}
+.tecla_toim.ativa,
+.tecla_toim:active {
+  background-color: var(--cor-toim);
+  border: 4px solid  var(--cor-toim);
+  box-shadow: 3px 3px 0 var(--cor-toim-sombra) inset;
+  outline: none;
+}
+.tecla_psh.ativa,
+.tecla_psh:active {
+  background-color: var(--cor-psh);
+  border: 4px solid  var(--cor-psh);
+  box-shadow: 3px 3px 0 var(--cor-psh-sombra) inset;
+  outline: none;
+}
+.tecla_tic.ativa,
+.tecla_tic:active {
+  background-color: var(--cor-tic);
+  border: 4px solid  var(--cor-tic);
+  box-shadow: 3px 3px 0 var(--cor-tic-sombra) inset;
+  outline: none;
+}
+.tecla_tom.ativa,
+.tecla_tom:active {
+  background-color: var(--cor-tom);
+  border: 4px solid  var(--cor-tom);
+  box-shadow: 3px 3px 0 var(--cor-tom-sombra) inset;
+  outline: none;
+}
+
+.tecla_pom.active:focus,
+.tecla_pom:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-pom-sombra) inset;
+}
+.tecla_clap.active:focus,
+.tecla_clap:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-clap-sombra) inset;
+}
+.tecla_tim.active:focus,
+.tecla_tim:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-tim-sombra) inset;
+}
+.tecla_puff.active:focus,
+.tecla_puff:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-puff-sombra) inset;
+}
+.tecla_splash.active:focus,
+.tecla_splash:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-splash-sombra) inset;
+}
+.tecla_toim.active:focus,
+.tecla_toim:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-toim-sombra) inset;
+}
+.tecla_psh.active:focus,
+.tecla_psh:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-psh-sombra) inset;
+}
+.tecla_tic.active:focus,
+.tecla_tic:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-tic-sombra) inset;
+}
+.tecla_tom.active:focus,
+.tecla_tom:active:focus {
+  box-shadow: 3px 3px 0 var(--cor-tom-sombra) inset;
+}
